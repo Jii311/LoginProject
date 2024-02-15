@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoginProject</string>
+    <string name="spinner_item">Select Aritmatics</string>
+    <string-array name="calculator_array">
+        <item>Tambah</item>
+        <item>Kurang</item>
+        <item>Bagi</item>
+        <item>Kali</item>
+    </string-array>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/whatsapp_image_2024_01_18_at_13_16_06_3594c230" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="410dp"
+        android:layout_height="235dp"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.979"
+        app:srcCompat="@drawable/th" />
+
+    <ImageView
+        android:id="@+id/imgPin"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="292dp"
+        android:foreground="@drawable/pinterest_png45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text"
+        android:hint="Alamat Email"
+        android:paddingStart="25dp"
+        android:textColorHint="#757575"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Selamat datang di \nPinterest"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPin" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#C92127"
+        android:text="Lanjutkan"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:rippleColor="#4DFFFFFF" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#1878F3"
+        android:text="Lanjutkan dengan Facebook"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:icon="@drawable/facebook"
+        app:iconGravity="start"
+        app:iconPadding="0dp"
+        app:iconSize="25dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next"
+        app:rippleColor="#4DFFFFFF" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#767676"
+        android:text="Lanjutkan dengan Google"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:icon="@drawable/search"
+        app:iconGravity="start"
+        app:iconPadding="0dp"
+        app:iconSize="25dp"
+        app:iconTint="@color/white"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebook"
+        app:rippleColor="#4DFFFFFF" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Dengan melanjutkan, berarti Anda menyetujui\nPersyaratan Layanan Pinterest dan menyatakan bahwa\nAnda telah membaca Kebijakan Privasi kami.\nPemberitauan di koleksi"
+        android:textColor="#FFFFFF"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
