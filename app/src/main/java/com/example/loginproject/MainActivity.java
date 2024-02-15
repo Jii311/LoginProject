@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (txtUsername.getText().toString().equals("jihad")) {
                     Toast.makeText(MainActivity.this, "Login Sukses!", Toast.LENGTH_LONG).show();
-
                     Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                     startActivity(intent);
                 }

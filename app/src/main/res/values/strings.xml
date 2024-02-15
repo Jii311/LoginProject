@@ -4,7 +4,7 @@
     <string-array name="calculator_array">
         <item>Tambah</item>
         <item>Kurang</item>
-        <item>Bagi</item>
         <item>Kali</item>
+        <item>Bagi</item>
     </string-array>
 </resources>
